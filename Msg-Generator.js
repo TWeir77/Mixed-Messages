@@ -4,5 +4,12 @@ const ansObj = {
     array3 : ["Storm the Castle", "Steal the Data", "Collect the DragonBalls", "Stop the Sith", "Deceive the Beastmen", "Defeat the Spiral King", "Defeat Frieza", "Stop Strazar", "Destory the Death Star", "Annihilate the Demons", "Disarm the Bomb", "Conquer Hell", "Train to go Super Saiyan", "Become the #1 Hero", "Find the Meaning of Life", "Build a Harem", "Look Beyond Your Past", "Solve the Puzzle", "Destroy the Curse"]
 }
 
-console.log(ansObj)
+let randArrNum = arr => Math.floor(Math.random() * arr.length)
 
+const messageSelector = (arr) => {
+    return arr[randArrNum(arr)]
+}
+
+console.log(`Your partner for this mission is ${messageSelector(ansObj.array1)}!`);
+console.log(`Your Battle Cry is "${messageSelector(ansObj.array2)}"`);
+console.log(`Your Objective: ${messageSelector(ansObj.array3)}`);
