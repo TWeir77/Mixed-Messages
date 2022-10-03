@@ -1,0 +1,31 @@
+body {
+    background-color: rgb(50, 50, 50);
+    color: rgb(256, 15, 15);
+}
+
+#header {
+    background-color: rgb(25, 25, 25);
+    text-align: center;
+    padding: 10%;
+    font-size: x-large;
+}
+
+#button {
+    text-align: center;
+    border: 10px solid rgb(256, 15, 15); 
+    font-size: 2.2rem;
+    padding: 5%;
+    margin: 5%;
+    border-radius: 15px;
+    box-shadow: black 5px 5px;
+}
+
+#msg-area {
+    text-align: center;
+}
+
+.message {
+    font-size: 1.8rem;
+    text-decoration: underline;
+    font-weight: 600;
+}

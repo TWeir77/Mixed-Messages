@@ -10,6 +10,29 @@ const messageSelector = (arr) => {
     return arr[randArrNum(arr)]
 }
 
-console.log(`Your partner for this mission is ${messageSelector(ansObj.array1)}!`);
-console.log(`Your Battle Cry is "${messageSelector(ansObj.array2)}"`);
-console.log(`Your Objective: ${messageSelector(ansObj.array3)}`);
+let button = document.getElementById('button');
+// let ans1 = document.getElementById('ans1');
+// let ans2 = document.getElementById('ans2');
+// let ans3 = document.getElementById('ans3');
+
+// console.log(ans1)
+
+button.onclick = () => {
+    document.getElementById('ans1').innerHTML = `Your partner for this mission is ${messageSelector(ansObj.array1)}!`;
+    document.getElementById('ans2').innerHTML = `Your Battle Cry is "${messageSelector(ansObj.array2)}"`;
+    document.getElementById('ans3').innerHTML = `Your Objective: ${messageSelector(ansObj.array3)}`;
+};
+
+button.onmousedown = () => {
+    button.style.boxShadow = 'black 2px 2px';
+}
+
+button.onmouseup = () => {
+    button.style.boxShadow = '';
+}
+
+alert
+
+// console.log(`Your partner for this mission is ${messageSelector(ansObj.array1)}!`);
+// console.log(`Your Battle Cry is "${messageSelector(ansObj.array2)}"`);
+// console.log(`Your Objective: ${messageSelector(ansObj.array3)}`);
